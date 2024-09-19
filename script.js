@@ -1,5 +1,8 @@
 function minDate(dates) {
-  //write you code here
+  // Use the Math.min function to find the minimum date by converting the dates to Date objects
+  return dates.reduce((min, current) => {
+    return new Date(current) < new Date(min) ? current : min;
+  });
 }
 
 // Do not change the code
